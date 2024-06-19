@@ -1,4 +1,4 @@
-public class Edificio implements CarbonFootprint {
+public abstract class Edificio implements CarbonFootprint {
     private String localizacao;
     private int andares;
     private boolean temElevador;
@@ -34,11 +34,5 @@ public class Edificio implements CarbonFootprint {
     }
 
     @Override
-    public double getCarbonFootprint() {
-        double baseFootprint = andares * 1000; 
-        if (temElevador) {
-            baseFootprint += 500;
-        }
-        return baseFootprint;
-    }
+    public abstract double getCarbonFootprint();
 }
