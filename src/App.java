@@ -1,6 +1,5 @@
 public class App {
     public static void main(String[] args) {
-        // Edificio edificio = new Edificio("Centro", 5, true);
         Casa casa = new Casa("Subúrbio", 2, false, 4);
         Escola escola = new Escola("Centro", 3, true, 20);
         Carro carro = new Carro("Toyota", "Corolla", 2015);

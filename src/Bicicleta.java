@@ -9,7 +9,6 @@ public class Bicicleta implements CarbonFootprint {
         this.temSuspensao = temSuspensao;
     }
 
-    // Getters e setters
     public String getTipo() {
         return tipo;
     }
